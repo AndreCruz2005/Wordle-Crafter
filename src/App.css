@@ -1,0 +1,210 @@
+:root {
+    color-scheme: light dark;
+    display: flex;
+}
+
+body {
+    background-color: light-dark(#ebebeb, #0d1117);
+    display: flex;
+    width: 100vw;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#settings-box {
+    /* Center the box */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    /* Box styling */
+    width: 300px;
+    padding: 2rem;
+
+    /* Content layout */
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+#settings-box h2 {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+#settings-box label {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    font-weight: 500;
+}
+
+#settings-box input,
+#settings-box select {
+    padding: 0.5rem;
+    font-size: 1rem;
+    background-color: light-dark(#ebebeb, #0d1117);
+    border: 1px solid #2d343d;
+}
+
+#settings-box button {
+    margin-top: 0.5rem;
+    padding: 0.75rem;
+    border: none;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+    background-color: light-dark(#ebebeb, #0d1117);
+    border: 1px solid #2d343d;
+}
+
+#settings-box button:hover {
+    filter: brightness(1.6);
+}
+
+#puzzle-screen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    gap: 10px;
+    width: fit-content;
+
+}
+
+#puzzle-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4vw;
+
+    @media (max-width: 768px) {
+        gap: 0.9vw;
+    }
+
+    height: fit-content;
+    overflow-y: auto;
+    width: fit-content;
+}
+
+#input-box {
+    display: flex;
+    width: 100%;
+    border: 1px solid #2d343d;
+    padding: 3%;
+    box-sizing: border-box;
+    margin-bottom: 13%;
+}
+
+#input-box input {
+    flex: 1;
+    border: none;
+    padding: 10px;
+    background-color: light-dark(#ebebeb, #0d1117);
+    color: light-dark(black, white);
+}
+
+#input-box input::placeholder {
+    font-size: 16px;
+    color: #2d343d;
+}
+
+#input-box input:focus {
+    outline: none;
+}
+
+#input-box button {
+    border: none;
+    background-color: light-dark(#ebebeb, #0d1117);
+}
+
+#input-box button:hover {
+    cursor: pointer;
+}
+
+#input-box img {
+    transition: 0.3s;
+}
+
+#input-box img:hover {
+    filter: brightness(1.6);
+}
+
+.word-row {
+    display: flex;
+    gap: inherit;
+    width: fit-content;
+}
+
+.word-row div {
+    width: 65px;
+    height: auto;
+    aspect-ratio: 1/1;
+    border: 1px solid #2d343d;
+    transition: 0.3s;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 65px;
+    font-size: 3em;
+    color: white;
+}
+
+.word-row .RIGHT {
+
+    background-color: #6aaa64;
+    border: 1px solid #6aaa64;
+
+}
+
+.word-row .PRESENT {
+
+    background-color: #b59f3b;
+    border: 1px solid #b59f3b;
+}
+
+.word-row .AUSENT {
+
+    background-color: #c64545;
+    border: 1px solid #c64545;
+}
+
+#end-of-game-box {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+#revealed {
+    color: #6aaa64;
+    font-size: 30px;
+}
+
+#end-of-game-buttons {
+    display: flex;
+    width: 100%;
+    gap: 5%;
+    justify-content: center;
+
+    button {
+        color: light-dark(black, white);
+        flex: 1;
+        background-color: light-dark(#ebebeb, #0d1117);
+        border: 1px solid #2d343d;
+        border-radius: none;
+        padding: 2%;
+        box-sizing: border-box;
+        transition: 0.3s;
+    }
+
+    button:hover {
+        filter: brightness(1.8);
+        cursor: pointer;
+    }
+
+}
