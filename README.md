@@ -1,6 +1,13 @@
-# Totally Original Word Game
+# Wordle Crafter
 
-A game similar to Wordle made with react
+Craft puzzles similar to Josh Wardle's Wordle and share them via URL.
+
+![Home page](screenshots/homepage.png) ![Puzzle](screenshots/puzzle.png)
+
+### Supported languages
+
+- English
+- Portuguese
 
 ### Requirements
 
@@ -8,7 +15,7 @@ A game similar to Wordle made with react
 
 ### Setup
 
-1. Clone the repo and access the downloaded directory
+##### Clone the repository and access its directory through the terminal
 
 ```sh
 git clone <repository url>
