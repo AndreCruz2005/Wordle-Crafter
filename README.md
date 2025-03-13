@@ -1,6 +1,6 @@
 # Wordle Crafter
 
-Craft puzzles similar to Josh Wardle's Wordle and share them via URL.
+Craft puzzles similar to Josh Wardle's Wordle and share them via URL. Random secret word system implmented with [Random Word API](https://github.com/RazorSh4rk/random-word-api/)
 
 ![Home page](screenshots/homepage.png) ![Puzzle](screenshots/puzzle.png)
 
@@ -18,17 +18,17 @@ Craft puzzles similar to Josh Wardle's Wordle and share them via URL.
 ##### Clone the repository and access its directory through the terminal
 
 ```sh
-git clone <repository url>
-cd <folder path>
+git clone https://github.com/AndreCruz2005/Wordle-Crafter
+cd Wordle-Crafter
 ```
 
-2. Install dependencies
+##### Install dependencies
 
 ```sh
 npm install
 ```
 
-3. Start development server
+##### Start development server
 
 ```sh
 npm run dev
